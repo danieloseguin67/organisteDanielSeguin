@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-//import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -7,10 +7,6 @@ import { RouterModule } from '@angular/router';
   selector: 'app-root',
   template: `
   <main>
-    <header class="brand-name">
-      <img class="brand-logo" src="/assets/logo.png"
-      alt="logo" aria-hidden="true">
-    </header>
     <section class="content">
       <router-outlet></router-outlet>
     </section>
@@ -18,10 +14,10 @@ import { RouterModule } from '@angular/router';
   `,
   styleUrls: ['./app.component.css'],
   imports: [
-    //HomeComponent,
+    HomeComponent,
     RouterModule]
 })
 
 export class AppComponent {
-  title = 'homes';
+  title = 'Daniel Seguin, Organist';
 }

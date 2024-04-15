@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
-//import { HomeComponent } from './home/home.component';
-//import { DetailsComponent } from './details/details.component';
+import { HomeComponent } from './home/home.component';
+import { DetailComponent } from './detail/detail.component';
 
 const routeConfig: Routes = [
     { path: '',
-    //component: HomeComponent,
-    title: 'Home Page'
+    component: HomeComponent,
+    title: 'Home Page of Daniel Seguin, Organist'
     },
-    { path: 'details/:id',
-    //component: DetailsComponent,
+    { path: 'detail/:id',
+    component: DetailComponent,
     title: 'Details Page'
     }
 ];

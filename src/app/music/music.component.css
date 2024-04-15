@@ -1,0 +1,26 @@
+
+.song {
+    background: var(--accent-color);
+    border-radius: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  .song-heading {
+    color: var(--primary-color);
+    padding: 10px 20px 0 20px;
+  }
+  .song-photo {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+  }
+  .song-subheading {
+    padding: 20px 20px 20px 20px;
+  }
+  
+  song-link a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+  }

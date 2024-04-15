@@ -1,0 +1,11 @@
+<section>
+  <div class="d-sm-flex p-4">
+    <div class="input-group search-input">
+      <input type="text" class="form-control" placeholder="Search for a song, category, or author" #filter aria-label="field to search for a song" aria-describedby="button-search">
+      <button class="btn btn-outline-secondary" type="button" (click)="filterResults(filter.value)" id="button-search">Search</button>
+    </div>
+  </div>
+  </section>
+  <section class="results">
+    <app-music *ngFor="let musicModel of filteredSongList" [musicModel] = "musicModel"></app-music>
+  </section>
