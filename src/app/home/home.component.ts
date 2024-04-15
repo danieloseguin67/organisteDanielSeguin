@@ -36,10 +36,6 @@ export class HomeComponent {
       this.filteredSongList = this.songList.filter(
         musicModel => musicModel?.songName.toLowerCase().includes(text.toLowerCase()));
       console.log(this.filteredSongList);
-    } else {
-      this.filteredSongList = this.filteredSongList.filter(
-        musicModel => musicModel?.songName.toLowerCase().includes(text.toLowerCase()));
-      console.log(this.filteredSongList);
     }
 
     if ( this.filteredSongList.length === 0) {
