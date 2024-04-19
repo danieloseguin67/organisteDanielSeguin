@@ -1,6 +1,7 @@
 
 .song {
-    background: var(--accent-color);
+    color: var(--primary-color);
+    background: white;
     border-radius: 30px;
     padding-bottom: 5px;
     text-align: center;
@@ -20,7 +21,7 @@
   }
   
   song-link a {
+    color: var(--primary-color);
     padding-left: 20px;
     text-decoration: none;
-    color: var(--primary-color);
   }
