@@ -5,3 +5,6 @@ Music website for organist Daniel Seguin
 
 https://dev.azure.com/seguindev23/organisteDanielSeguin/_boards/board/t/organisteDanielSeguin%20Team/Issues
 
+![image](https://github.com/danieloseguin67/organisteDanielSeguin/assets/63018494/87725336-2b40-4c29-aa6b-7dea85a02a42)
+
+
