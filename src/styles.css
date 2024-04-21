@@ -29,3 +29,17 @@
       width: 50%;
     }
   }
+
+  /* need to add this when using fixed-top in the navivation bar */
+  body::before {
+    display: block;
+    content: '';
+    height: 60px;
+  }
+
+  /* need this for the map */
+  #map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }

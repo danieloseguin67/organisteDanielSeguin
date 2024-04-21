@@ -24,26 +24,30 @@ export class HomeComponent {
   }
   
   filterResults(text: string) {
-    // must search text within the songName, songAuther, songDescription
-    if (!text) this.filteredSongList = this.songList;
-    console.log("value of filtered = ",text)
+      // must search text within the songName, songAuther, songDescription
+     if (!text) this.filteredSongList = this.songList;
+     console.log("value of filtered = ",text)
 
-    this.filteredSongList = this.songList.filter(
-      musicModel => musicModel?.songCategory.toLowerCase().includes(text.toLowerCase()));
-    console.log(this.filteredSongList);
+     this.filteredSongList = this.songList.filter(
+     musicModel => musicModel?.songCategory.toLowerCase().includes(text.toLowerCase()));
+     console.log(this.filteredSongList);
 
-    if ( this.filteredSongList.length === 0) {
-      this.filteredSongList = this.songList.filter(
-        musicModel => musicModel?.songName.toLowerCase().includes(text.toLowerCase()));
-      console.log(this.filteredSongList);
+     if ( this.filteredSongList.length === 0) {
+       this.filteredSongList = this.songList.filter(
+         musicModel => musicModel?.songName.toLowerCase().includes(text.toLowerCase()));
+         console.log(this.filteredSongList);
+     }
+
+     if ( this.filteredSongList.length === 0) {
+       this.filteredSongList = this.songList.filter(
+         musicModel => musicModel?.songAuthor.toLowerCase().includes(text.toLowerCase()));
+       console.log(this.filteredSongList);
+     }
+
     }
 
-    if ( this.filteredSongList.length === 0) {
-      this.filteredSongList = this.songList.filter(
-        musicModel => musicModel?.songAuthor.toLowerCase().includes(text.toLowerCase()));
-      console.log(this.filteredSongList);
+    registerUser(text: string) {
+      window.alert("Option not implemented yet");
     }
-
-  }
 
 }

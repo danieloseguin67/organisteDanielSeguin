@@ -1,27 +1,19 @@
     
     <div class="container">
+      <p class="col-sm-8 col-md-8 col-lg-6">You have selected the following song</p>
       <div class="row">
-        <div class="col-sm-4 col-md-2 col-lg-2">Song Id</div>
-        <div class="col-sm-8 col-md-8 col-lg-6">{{ musicModel?.songId }}</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 col-md-2 col-lg-2"><div class="p-3 border bg-dark">Song Name</div></div>
         <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">{{ musicModel?.songName }}</div></div>
       </div>
       <div class="row">
-        <div class="col-sm-4 col-md-2 col-lg-2"><div class="p-3 border bg-dark">Author</div></div>
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">{{ musicModel?.songAuthor }}</div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">Interpreted by: {{ musicModel?.songAuthor }}</div></div>
+     </div>
+      <div class="row">
+        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">Category: {{ musicModel?.songCategory }}</div></div>
       </div>
       <div class="row">
-        <div class="col-sm-4 col-md-2 col-lg-2"><div class="p-3 border bg-dark">Song Category</div></div>
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">{{ musicModel?.songCategory }}</div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">Description: {{ musicModel?.songDescription }}</div></div>
       </div>
       <div class="row">
-        <div class="col-sm-4 col-md-2 col-lg-2"><div class="p-3 border bg-dark">Song Description</div></div>
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">{{ musicModel?.songDescription }}</div></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 col-md-2 col-lg-2"><div class="p-3 border bg-dark">Listen</div></div>
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark"><a href="{{ musicModel?.songLink }}" target="_blank">Click Here</a></div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark"><a href="{{ musicModel?.songLink }}" target="_blank">Click Here to listen</a></div></div>
       </div>
     </div>
