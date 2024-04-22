@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import { NgIf } from '@angular/common';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contactme',
@@ -7,6 +11,7 @@ import { Component } from '@angular/core';
   templateUrl: './contactme.component.html',
   styleUrl: './contactme.component.css'
 })
-export class ContactmeComponent {
+
+export class ContactmeComponent  {
 
 }

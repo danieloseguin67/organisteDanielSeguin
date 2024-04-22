@@ -242,5 +242,41 @@
       "createdDate": "2024/04/07",
       "createdBy": "system"
     }
+  ],
+  "users": [
+    {
+      "userId": "1",
+      "userName": "admin",
+      "userFullName": "Web master administrator",
+      "userEmail": "admin@eureka.net",
+      "userLevel": "system"
+    },
+    {
+      "userId": "2",
+      "userName": "guest",
+      "userFullName": "Guest web user",
+      "userEmail": "guest@eureka.net",
+      "userLevel": "guest"
+    },
+    {
+      "userId": "1",
+      "userName": "daniel",
+      "userFullName": "Daniel Seguin",
+      "userEmail": "daniel@eureka.net",
+      "userLevel": "system"
+    }
+  ],
+  "specialrequests": [
+    {
+      "songName": "Je pense a toi",
+      "requesterName": "Daniel Seguin",
+      "requesterEmail": "danieloseguin67@gmail.com",
+      "creationDate": "2024-04-21"
+    }
+  ],
+  "fanlist": [
+    {
+      "emailaddress": "danieloseguin67@gmail.com"
+    }
   ]
 }

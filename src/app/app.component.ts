@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { NgClass } from '@angular/common';
 
 @Component({
   standalone: true,
@@ -15,9 +17,12 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./app.component.css'],
   imports: [
     HomeComponent,
-    RouterModule]
+    RouterModule,
+    FormsModule]
 })
 
 export class AppComponent {
   title = 'Daniel Seguin, Organist';
+
+
 }
