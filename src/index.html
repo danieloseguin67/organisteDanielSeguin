@@ -25,14 +25,13 @@
           <li class="nav-item"><a href="/about" class="nav-link">About the organist</a></li>
           <li class="nav-item"><a href="/specialrequest" class="nav-link">Make a Special Request</a></li>
           <li class="nav-item"><a href="/contactme" class="nav-link">Contact the Web Master</a></li>
-          <li class="nav-item"><a href="/admin" class="nav-link">Administration</a></li>
         </ul>
       </div>
    </div>
   </nav>
 
   <!-- content of the page -->
-  <section class="bg-dark text-light p-5 p-lg-4 text-center -py3">
+  <section class="bg-dark text-light p-5 p-lg-4 -py3">
     <div class="container">
       <div class="d-sm-flex align-items-center justify-content-between">
         <div>
@@ -42,7 +41,7 @@
             You can also make a special to Daniel for him to find the music and add it to the recorded music.
           </p>
         </div>
-        <img class="img-fluid w-50 d-none d-sm-block" src="assets/orgueRoland.ico" alt="Daniel's at the Roland AT-100 organ" />
+        <img class="img-fluid w-35 d-none d-sm-block" src="assets/orgueRoland.ico" alt="Daniel's at the Roland AT-100 organ" />
       </div>
       <app-root></app-root>
       <br>
@@ -53,10 +52,10 @@
   <section class="bg-primary text-light p-2">
     <div class="container">
       <div class="d-md-flex justify-content-between align-items-between">
-        <h2 class="mb-3 mb-md-0">Register as a fan of Daniel's music</h2>
-        <div class="input-group news-input">
-          <input type="text" class="form-control" placeholder="Enter email address" aria-label="Email address of person" aria-describedby="button-email">
-          <button class="btn btn-dark btn-lg" type="button" id="button-email">Submit</button>
+        <h2 class="mb-3 mb-md-0">Register as a fan of Daniel</h2>
+        <div class="input-group email-input">
+          <input type="text" class="form-control" id="emailaddr" placeholder="Enter email address" aria-label="Email address of person"aria-describedby="button-email">
+          <button class="btn btn-dark btn-lg" type="button" id="button-email" onclick="BecomeAFan()">Submit</button>
         </div>
       </div>
     </div>
@@ -65,7 +64,7 @@
   <!-- add boxes at the bottom of the page -->
   <section class="p-5">
     <div class="container">
-      <div class="row text-center g-4">
+      <div class="row text-center m-4">
         <div class="col-lg-4 d-flex align-items-stretch">
           <div class="card bg-dark text-light">
             <div class="card-body text-center">
@@ -74,7 +73,7 @@
               </div>
               <h3 class="card-title mb-3">André Gagnon </h3>   
               <p class="card-text">
-                André Gagnon (né le 2 août 1936 à Saint-Pacôme, Québec, Canada et mort le 3 décembre 2020 à Montréal) est un pianiste, compositeur, chef d'orchestre et arrangeur québécois.
+                André Gagnon (né le 2 août 1936 à Saint-Pacôme, Québec, Canada et mort le 3 décembre 2020 à Montréal) est un pianiste.
               </p>
               <a href="https://andregagnon.net/" class="btn btn-secondary" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
             </div>
@@ -88,7 +87,7 @@
               </div>   
               <h3 class="card-title mb-3">Alexandra Stréliski</h3>   
               <p class="card-text">
-              Née le 15 janvier 1985 à Montréal, Alexandra Stréliski est la fille de Jean-Jacques Stréliski, figure importante de la publicité au Québec, et de Luce Richard. Elle est la sœur cadette de la chroniqueuse Léa Stréliski.
+              Alexandra est née le 15 janvier 1985 à Montréal.  Elle est une nouvelle pianiste avec de jolies douces mélodies.
               </p>
               <a href="https://alexandrastreliski.com/" class="btn btn-dark" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
             </div>
@@ -102,27 +101,104 @@
               </div>   
               <h3 class="card-title mb-3">Richard Abel</h3>   
               <p class="card-text">
-                Fils d'un chauffeur de taxi, qui devient par la suite artisan, Richard Abel est issu d'une famille très modeste. Le goût de la musique et du piano lui vient de sa mère. Il commence à jouer à l'oreille dès son enfance, mais il ne prend des cours de piano qu'à l'âge de 14 ans avec des religieuses.
+                Richard issu d'une famille très modeste. Il commence à jouer à l'oreille dès son enfance, mais il ne prend des cours de piano qu'à l'âge de 14 ans avec des religieuses.
               </p>
               <a href="https://www.richardabel.ca/" class="btn btn-secondary" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
             </div>
           </div>
         </div>
       </div>
+
+      <br>
+
+      <div class="row text-center m-4">
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-file-earmark-music-fill"></i>
+              </div>
+              <h3 class="card-title mb-3">Frank Mills</h3>
+              <p class="card-text">
+                Frank Mills (born June 27, 1942) is a Canadian pianist and recording artist, best known for his solo instrumental hit "Music Box Dancer".
+              </p>
+              <a href="https://frankmills.com/" class="btn btn-dark" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-file-earmark-music"></i>
+              </div>   
+              <h3 class="card-title mb-3">Serge Fontane</h3>   
+              <p class="card-text">
+              Serge Fontane (alias Serge Desroches) est né en 1932 à Sainte-Agathe-des-Monts, Laurentides, Quebec.
+              </p>
+              <a href="https://www.youtube.com/watch?v=r9cCWNMhkt8" class="btn btn-secondary" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-file-earmark-music-fill"></i>
+              </div>   
+              <h3 class="card-title mb-3">Richard Clayderman</h3>   
+              <p class="card-text">
+                Richard Clayderman, nom de scène de Philippe Pagès né le 28 décembre 1953 à Paris, il a composé la chanson Une Ballade pour Adeline.
+              </p>
+              <a href="https://www.youtube.com/channel/UCi8PYKXskV03qxQrnrtiGSA" class="btn btn-dark" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </div>
   </section>
 
   <!-- footer of the page -->
   <footer class="p-1 bg-dark text-white text-center position-relative">
     <div class="container">
-      <p class="lead">Copyright &copy; 2024 SeguinDev</p>
+      <p class="lead">Web application developed by SeguinDev</p>
       <a href="#" class="position-absolute bottom-0 end-0 p-5">
-        <i class="bi bi-arrow-up-circle h1"></i>
       </a>
     </div>
   </footer>
 
   <!-- add javascript -->
+  <script>
+
+    createDefineVariables();
+
+    function BecomeAFan() {
+      emailaddr=document.getElementById("emailaddr").value;
+      if ( !CheckEmail(emailaddr) ) {
+        alert("You have entered an invalid email address!");
+        return;
+      }
+      data={emailaddress: emailaddr};
+      alert("Your fan request has been sent to Daniel");
+      return fetch(apiserver+"/fanlist", {method: "POST", body: JSON.stringify(data)});
+    }
+
+    const CheckEmail = (email) => {
+     return String(email)
+     .toLowerCase()
+     .match(
+       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+    };
+
+    function createDefineVariables() {
+      var apiserver;
+      globalThis.apiserver = "http://localhost:3000";
+    }
+
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 

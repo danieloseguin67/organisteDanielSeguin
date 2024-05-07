@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { musicModel } from '../musicModel';
 import { MusicComponent } from '../music/music.component';
 import { MusicService } from '../musicService';
+import { environment } from 'src/environments/environments';
 
 @Component({
   selector: 'app-home',
@@ -25,6 +26,9 @@ export class HomeComponent {
   
   filterResults(text: string) {
       // must search text within the songName, songAuther, songDescription
+
+     console.log("API Server = ",environment.apiserver);
+
      if (!text) this.filteredSongList = this.songList;
      console.log("value of filtered = ",text)
 

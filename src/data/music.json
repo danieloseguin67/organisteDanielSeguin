@@ -249,21 +249,24 @@
       "userName": "admin",
       "userFullName": "Web master administrator",
       "userEmail": "admin@eureka.net",
-      "userLevel": "system"
+      "userLevel": "system",
+      "id": "8fbc"
     },
     {
       "userId": "2",
       "userName": "guest",
       "userFullName": "Guest web user",
       "userEmail": "guest@eureka.net",
-      "userLevel": "guest"
+      "userLevel": "guest",
+      "id": "ba1b"
     },
     {
       "userId": "1",
       "userName": "daniel",
       "userFullName": "Daniel Seguin",
       "userEmail": "daniel@eureka.net",
-      "userLevel": "system"
+      "userLevel": "system",
+      "id": "5d8a"
     }
   ],
   "specialrequests": [
@@ -271,12 +274,61 @@
       "songName": "Je pense a toi",
       "requesterName": "Daniel Seguin",
       "requesterEmail": "danieloseguin67@gmail.com",
-      "creationDate": "2024-04-21"
+      "creationDate": "2024-04-21",
+      "id": "6718"
+    },
+    {
+      "id": "0",
+      "songName": "Balade pour adeline",
+      "requesterName": "Daniel Seguin",
+      "requesterEmail": "danieloseguin67@gmail.com",
+      "creationDate": "06-05-2024"
     }
   ],
   "fanlist": [
     {
-      "emailaddress": "danieloseguin67@gmail.com"
+      "emailaddress": "danieloseguin67@gmail.com",
+      "id": "263e"
+    },
+    {
+      "id": "d4c5",
+      "emailaddress": "jbleau@outlook.com"
+    },
+    {
+      "id": "2023",
+      "emailaddress": "alex@seguin.dev"
+    },
+    {
+      "id": "add8",
+      "emailaddress": "nathalieaseguin68@gmail.com"
+    },
+    {
+      "id": "e777",
+      "emailaddress": "daniel.seguin.externe@mrnf.gouv.qc.ca"
+    },
+    {
+      "id": "5db2",
+      "emailaddress": "jeanarache@outlook.com"
+    },
+    {
+      "id": "ca8d",
+      "emailaddress": "alexterieur@abc.com"
+    }
+  ],
+  "questionslist": [
+    {
+      "emailaddress": "danieloseguin67@gmail.com",
+      "name": "Daniel Seguin",
+      "qwestion": "this is my question",
+      "creationDate": "06-05-2024",
+      "id": "3306"
+    },
+    {
+      "id": "0",
+      "emailaddress": "danieloseguin67@gmail.com",
+      "name": "Daniel Seguin",
+      "question": "When will the site be online on the Internet",
+      "creationDate": "06-05-2024"
     }
   ]
 }

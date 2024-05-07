@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { musicModel } from './musicModel';
 import { Location } from '@angular/common'
+import { environment } from 'src/environments/environments';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MusicService {
- url = "http://localhost:3001/music";
+ url = environment.apiserver+"/music";
 
   // Purpose of Location?
   constructor(private _Location: Location) {}

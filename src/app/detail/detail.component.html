@@ -14,6 +14,9 @@
         <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">Description: {{ musicModel?.songDescription }}</div></div>
       </div>
       <div class="row">
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark"><a href="{{ musicModel?.songLink }}" target="_blank">Click Here to listen</a></div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark"><a href="{{ musicModel?.songLink }}" target="_blank">{{listenmsg}}</a></div></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark"><button onclick="history.back()">{{returnmsg}}</button></div></div>
       </div>
     </div>

@@ -15,6 +15,8 @@ export class DetailComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   MusicService = inject(MusicService);
   musicModel: musicModel | undefined;
+  returnmsg: string = "Return to song selection page";
+  listenmsg: string = "Click Here to listen to the song via YouTube";
 
   constructor() {
     const songId = String(this.route.snapshot.paramMap.get('id'));
