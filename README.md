@@ -2,8 +2,7 @@
 Music website for organist Daniel Seguin
 
 # Project Architecture
-![MusicSolution drawio](https://github.com/danieloseguin67/organisteDanielSeguin/assets/63018494/c03f1ed8-2985-4d53-ad05-cc3462ba8b32)
-
+![MusicSolution drawio](https://github.com/danieloseguin67/organisteDanielSeguin/assets/63018494/433ed819-2d49-4561-9fe4-3b83aecf1f55)
 
 # Project overview in Azure Devops:
 
