@@ -16,8 +16,8 @@ Application Screen Shots:
 
 ![image](https://github.com/danieloseguin67/organisteDanielSeguin/assets/63018494/a382f53e-c89c-45a8-95b2-5453b617d794)
 
-[image](https://github.com/danieloseguin67/organisteDanielSeguin/assets/63018494/18d58d1c-e4f6-4615-90aa-b95121d4d103)
+![image](https://github.com/danieloseguin67/organisteDanielSeguin/assets/63018494/18d58d1c-e4f6-4615-90aa-b95121d4d103)
 
-[image](https://github.com/danieloseguin67/organisteDanielSeguin/assets/63018494/ab3176d1-c6eb-4863-b9f6-e63efc052234)
+![image](https://github.com/danieloseguin67/organisteDanielSeguin/assets/63018494/ab3176d1-c6eb-4863-b9f6-e63efc052234)
 
 
