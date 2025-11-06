@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { environment } from 'src/environments/environments';
-import { SharedMethods } from '../shared/SharedMethods';
+import { Component, inject } from '@angular/core';
+import { EmailService } from '../shared/email.service';
 
 @Component({
   selector: 'app-contactme',
@@ -11,11 +10,53 @@ import { SharedMethods } from '../shared/SharedMethods';
 })
 
 export class ContactmeComponent  {
+  private emailService = inject(EmailService);
   currentDate: string = this.getTodayDate();
 
-  sendQuestion(_name: string, _email: string, _question: string) {
-    alert("Your question to the webmaster has been sent");
-    return fetch(environment.apiserver+"/questionslist", {method: "POST", body: JSON.stringify({emailaddress: _email, name: _name, question: _question, creationDate: this.currentDate, id: "0"})});
+  async sendQuestion(_name: string, _email: string, _question: string) {
+    // Validate required fields
+    if (!_name || !_email || !_question) {
+      alert("Please fill in all fields");
+      return;
+    }
+
+    // Validate email format
+    if (!this.isValidEmail(_email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    console.log('Submitting contact question:', { name: _name, email: _email });
+
+    try {
+      const success = await this.emailService.sendContactWebmaster(_name, _email, _question);
+      
+      if (success) {
+        alert("Your question has been sent to the webmaster successfully!");
+        // Clear form fields
+        this.clearForm();
+      } else {
+        alert("There was an error sending your question. Please check the console for details and try again.");
+      }
+    } catch (error) {
+      console.error('Error in sendQuestion:', error);
+      alert("There was an error sending your question. Please try again.");
+    }
+  }
+
+  private isValidEmail(email: string): boolean {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  }
+
+  private clearForm() {
+    const nameInput = document.getElementById('name') as HTMLInputElement;
+    const emailInput = document.getElementById('emailaddr') as HTMLInputElement;
+    const questionInput = document.getElementById('question') as HTMLTextAreaElement;
+    
+    if (nameInput) nameInput.value = '';
+    if (emailInput) emailInput.value = '';
+    if (questionInput) questionInput.value = '';
   }
 
   getTodayDate() {

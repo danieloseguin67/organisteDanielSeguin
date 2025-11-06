@@ -1,8 +1,11 @@
 <section>
-  <div class="d-md-flex justify-content-between align-items-between">
+  <h2 class="heading">🎵 Discover Beautiful Music</h2>
+  <div class="d-md-flex justify-content-center align-items-center">
     <div class="input-group search-input">
-      <input type="text" class="form-control" placeholder="Search for a song, category, or author" #filter aria-label="field to search for a song" aria-describedby="button-search">
-      <button class="btn btn-outline-secondary" type="button" (click)="filterResults(filter.value)" id="button-search">Search</button>
+      <input type="text" class="form-control" placeholder="🔍 Search for a song, category, or author..." #filter aria-label="field to search for a song" aria-describedby="button-search">
+      <button class="btn btn-primary" type="button" (click)="filterResults(filter.value)" id="button-search">
+        <i class="bi bi-search"></i> Search
+      </button>
     </div>
   </div>
   </section>

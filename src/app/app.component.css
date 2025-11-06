@@ -1,13 +1,27 @@
 /* Put these src/app/app.component.css */
 :host {
-    --content-padding: 10px;
+    --content-padding: 20px;
   }
+  
   header {
     display: block;
     height: 60px;
     padding: var(--content-padding);
-    box-shadow: 0px 5px 25px var(--shadow-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
   }
+  
   .content {
     padding: var(--content-padding);
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  /* Add smooth page transitions */
+  .content > * {
+    animation: fadeInUp 0.6s ease-out;
   }

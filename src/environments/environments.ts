@@ -1,4 +1,5 @@
 export const environment = {
     production: false,
-    apiserver: "http://localhost:3000"
+    // No longer using external API server - data loaded from local JSON file
+    apiserver: ""
   };

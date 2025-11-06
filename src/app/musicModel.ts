@@ -1,5 +1,5 @@
 export interface musicModel {
- songId: number,
+ songId: string,
  songName: string,
  songDescription: string,
  // possible values for songCategory ::= "Popular","Classical","Country","Polka","Christmas","Hockey","Occasion","Guests"

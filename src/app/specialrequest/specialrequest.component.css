@@ -1,0 +1,119 @@
+section {
+    min-height: 70vh;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+h2::before {
+    content: '🎵 ';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.form-label {
+    color: #f093fb;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+}
+
+.form-label::before {
+    content: '✨';
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #1f2937;
+}
+
+.form-control:focus {
+    background: white;
+    border-color: #f093fb;
+    box-shadow: 0 0 0 4px rgba(240, 147, 251, 0.1);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+.form-control::placeholder {
+    color: #9ca3af;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(240, 147, 251, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(240, 147, 251, 0.6);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem !important;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    form {
+        padding: 1.5rem;
+    }
+    
+    button {
+        width: 100%;
+    }
+}

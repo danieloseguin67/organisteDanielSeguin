@@ -1,22 +1,52 @@
     
     <div class="container">
-      <p class="col-sm-8 col-md-8 col-lg-6">You have selected the following song</p>
+      <h2 class="song-heading">{{ musicModel?.songName }}</h2>
+      <p class="col-sm-8 col-md-8 col-lg-6" style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem;">
+        <i class="bi bi-music-note-list"></i> Song Details
+      </p>
       <div class="row">
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">{{ musicModel?.songName }}</div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6">
+          <div class="p-3 border">
+            <strong style="color: var(--primary-color);">🎵 Song:</strong> {{ musicModel?.songName }}
+          </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">Interpreted by: {{ musicModel?.songAuthor }}</div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6">
+          <div class="p-3 border">
+            <strong style="color: var(--primary-color);">🎹 Interpreted by:</strong> {{ musicModel?.songAuthor }}
+          </div>
+        </div>
      </div>
       <div class="row">
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">Category: {{ musicModel?.songCategory }}</div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6">
+          <div class="p-3 border">
+            <strong style="color: var(--primary-color);">📁 Category:</strong> {{ musicModel?.songCategory }}
+          </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark">Description: {{ musicModel?.songDescription }}</div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6">
+          <div class="p-3 border">
+            <strong style="color: var(--primary-color);">📝 Description:</strong> {{ musicModel?.songDescription }}
+          </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark"><a href="{{ musicModel?.songLink }}" target="_blank">{{listenmsg}}</a></div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6">
+          <div class="p-3 border">
+            <i class="bi bi-youtube" style="color: #ff0000; font-size: 1.5rem;"></i>
+            <a href="{{ musicModel?.songLink }}" target="_blank">{{listenmsg}}</a>
+          </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col-sm-8 col-md-8 col-lg-6"><div class="p-3 border bg-dark"><button onclick="history.back()">{{returnmsg}}</button></div></div>
+        <div class="col-sm-8 col-md-8 col-lg-6">
+          <div class="p-3 border">
+            <button onclick="history.back()">
+              <i class="bi bi-arrow-left"></i> {{returnmsg}}
+            </button>
+          </div>
+        </div>
       </div>
     </div>

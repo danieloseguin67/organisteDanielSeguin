@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { environment } from 'src/environments/environments';
-import { SharedMethods } from '../shared/SharedMethods';
+import { Component, inject } from '@angular/core';
+import { EmailService } from '../shared/email.service';
 
 @Component({
   selector: 'app-specialrequest',
@@ -10,11 +9,55 @@ import { SharedMethods } from '../shared/SharedMethods';
   styleUrl: './specialrequest.component.css'
 })
 export class SpecialrequestComponent {
+  private emailService = inject(EmailService);
   currentDate: string = this.getTodayDate();
 
-  sendRequest(_name: string, _email: string, _song: string, _msg: string) {
-    alert("Your special request has been sent to Daniel");
-    return fetch(environment.apiserver+"/specialrequests", {method: "POST", body: JSON.stringify({songName: _song, requesterName: _name, requesterEmail: _email, creationDate: this.currentDate, id: "0"})});
+  async sendRequest(_name: string, _email: string, _song: string, _msg: string) {
+    // Validate required fields
+    if (!_name || !_email || !_song) {
+      alert("Please fill in all required fields (name, email, and song name)");
+      return;
+    }
+
+    // Validate email format
+    if (!this.isValidEmail(_email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    console.log('Submitting special request:', { name: _name, email: _email, song: _song });
+
+    try {
+      const success = await this.emailService.sendSpecialRequest(_name, _email, _song, _msg || '');
+      
+      if (success) {
+        alert("Your special request has been sent to Daniel successfully!");
+        // Clear form fields
+        this.clearForm();
+      } else {
+        alert("There was an error sending your request. Please check the console for details and try again.");
+      }
+    } catch (error) {
+      console.error('Error in sendRequest:', error);
+      alert("There was an error sending your request. Please try again.");
+    }
+  }
+
+  private isValidEmail(email: string): boolean {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  }
+
+  private clearForm() {
+    const nameInput = document.getElementById('name') as HTMLInputElement;
+    const emailInput = document.getElementById('emailaddr') as HTMLInputElement;
+    const songInput = document.getElementById('songname') as HTMLInputElement;
+    const msgInput = document.getElementById('emailmsg') as HTMLTextAreaElement;
+    
+    if (nameInput) nameInput.value = '';
+    if (emailInput) emailInput.value = '';
+    if (songInput) songInput.value = '';
+    if (msgInput) msgInput.value = '';
   }
 
   getTodayDate() {

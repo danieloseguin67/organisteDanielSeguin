@@ -18,7 +18,7 @@
                 <label for="EmailMsgLabel" class="form-label">Message</label>
                 <textarea class="form-control" id="emailmsg" rows="5" #msg placeholder="Enter your message"></textarea>
             </div>
-            <button type="submit" class="button is-large is-warning" (click)="sendRequest(name.value,email.value,song.value,msg.value)">Submit</button>
+            <button type="button" class="button is-large is-warning" (click)="sendRequest(name.value,email.value,song.value,msg.value)">Submit</button>
         </form>
     </div>
 </section>

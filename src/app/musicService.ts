@@ -1,29 +1,26 @@
 import { Injectable } from '@angular/core';
 import { musicModel } from './musicModel';
 import { Location } from '@angular/common'
-import { environment } from 'src/environments/environments';
+import musicData from '../data/music.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MusicService {
- url = environment.apiserver+"/music";
+  private musicList: musicModel[] = musicData.music;
 
-  // Purpose of Location?
   constructor(private _Location: Location) {}
 
   async getAllMusicSongs() : Promise<musicModel[]> {
-    // also checkout angular.io for HTTP client service class
-    const data = await fetch(this.url)
-    return await data.json() ?? [];
+    // Return music from local JSON file
+    return Promise.resolve(this.musicList);
   }
 
   async getMusicSongById(id: string): Promise<musicModel | undefined> {
-    // also checkout angular.io for HTTP client service class
-    console.log("url = ",this.url);
-    console.log("id = ",id)
-    const data = await fetch(`${this.url}/${id}`);
-    return await data.json() ?? {};
+    // Find song by id in local data
+    console.log("Looking for song with id = ", id);
+    const song = this.musicList.find(song => song.id === id);
+    return Promise.resolve(song);
   }
 
   // placeholder for function to add new song by admin user
