@@ -1,3 +1,20 @@
+<!-- Hero section -->
+<section class="hero-section bg-dark text-light p-5 p-lg-4 -py3">
+  <div class="container">
+    <div class="d-sm-flex align-items-center justify-content-between">
+      <div>
+        <h1>Welcome to the <span class="text-warning">Daniel's Seguin</span> organ music website</h1>
+        <p class="lead my-2">
+          Daniel has recorded some nice popular music for you to listen.
+          You can also make a special to Daniel for him to find the music and add it to the recorded music.
+        </p>
+      </div>
+      <img class="img-fluid w-35 d-none d-sm-block" src="assets/orgueRoland.ico" alt="Daniel's at the Roland AT-100 organ" />
+    </div>
+  </div>
+</section>
+
+<!-- Search section -->
 <section>
   <h2 class="heading">🎵 Discover Beautiful Music</h2>
   <div class="d-md-flex justify-content-center align-items-center">
@@ -8,7 +25,128 @@
       </button>
     </div>
   </div>
-  </section>
-  <section class="results">
-      <app-music *ngFor="let musicModel of filteredSongList" [musicModel] = "musicModel"></app-music>
-  </section>
+</section>
+
+<!-- Music results -->
+<section class="results">
+  <app-music *ngFor="let musicModel of filteredSongList" [musicModel] = "musicModel"></app-music>
+</section>
+
+<!-- Fan registration section -->
+<section class="fan-register-section bg-primary text-light p-2">
+  <div class="container">
+    <div class="d-md-flex justify-content-between align-items-between">
+      <h2 class="mb-3 mb-md-0">Register as a fan of Daniel</h2>
+      <div class="input-group email-input">
+        <input type="email" class="form-control" id="emailaddr" placeholder="Enter email address" aria-label="Email address of person" aria-describedby="button-email">
+        <button class="btn btn-dark btn-lg" type="button" id="button-email" onclick="becomeFanEmailJS()">Submit</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Artists section -->
+<section class="artists-section p-5">
+  <div class="container">
+    <div class="row text-center m-4">
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-file-earmark-music-fill"></i>
+            </div>
+            <h3 class="card-title mb-3">André Gagnon </h3>   
+            <p class="card-text">
+              André Gagnon (né le 2 août 1936 à Saint-Pacôme, Québec, Canada et mort le 3 décembre 2020 à Montréal) est un pianiste.
+            </p>
+            <a href="https://andregagnon.net/" class="btn btn-secondary" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card bg-light text-dark">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-file-earmark-music"></i>
+            </div>   
+            <h3 class="card-title mb-3">Alexandra Stréliski</h3>   
+            <p class="card-text">
+            Alexandra est née le 15 janvier 1985 à Montréal.  Elle est une nouvelle pianiste avec de jolies douces mélodies.
+            </p>
+            <a href="https://alexandrastreliski.com/" class="btn btn-dark" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-file-earmark-music-fill"></i>
+            </div>   
+            <h3 class="card-title mb-3">Richard Abel</h3>   
+            <p class="card-text">
+              Richard issu d'une famille très modeste. Il commence à jouer à l'oreille dès son enfance, mais il ne prend des cours de piano qu'à l'âge de 14 ans avec des religieuses.
+            </p>
+            <a href="https://www.richardabel.ca/" class="btn btn-secondary" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row text-center m-4">
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card bg-light text-dark">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-file-earmark-music-fill"></i>
+            </div>
+            <h3 class="card-title mb-3">Frank Mills</h3>
+            <p class="card-text">
+              Frank Mills (born June 27, 1942) is a Canadian pianist and recording artist, best known for his solo instrumental hit "Music Box Dancer".
+            </p>
+            <a href="https://frankmills.com/" class="btn btn-dark" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-file-earmark-music"></i>
+            </div>   
+            <h3 class="card-title mb-3">Serge Fontane</h3>   
+            <p class="card-text">
+            Serge Fontane (alias Serge Desroches) est né en 1932 à Sainte-Agathe-des-Monts, Laurentides, Quebec.
+            </p>
+            <a href="https://www.youtube.com/watch?v=r9cCWNMhkt8" class="btn btn-secondary" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card bg-light text-dark">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-file-earmark-music-fill"></i>
+            </div>   
+            <h3 class="card-title mb-3">Richard Clayderman</h3>   
+            <p class="card-text">
+              Richard Clayderman, nom de scène de Philippe Pagès né le 28 décembre 1953 à Paris, il a composé la chanson Une Ballade pour Adeline.
+            </p>
+            <a href="https://www.youtube.com/channel/UCi8PYKXskV03qxQrnrtiGSA" class="btn btn-dark" target="_blank"><i class="bi bi-chevron-right">Read More</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="p-1 bg-dark text-white text-center position-relative">
+  <div class="container">
+    <p class="lead">Web application developed by SeguinDev</p>
+    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+    </a>
+  </div>
+</footer>
