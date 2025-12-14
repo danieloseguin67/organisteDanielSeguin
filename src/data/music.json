@@ -241,6 +241,138 @@
       "songAuthor": "Joe Dassin",
       "createdDate": "2024/04/07",
       "createdBy": "system"
+    },
+    {
+      "songId": "23",
+      "songName": "Blue eyes crying in the rain",
+      "songDescription": "https://www.youtube.com/watch?v=Xfr1QSRkiBY",
+      "songCategory": "country",
+      "songLink": "",
+      "songAuthor": "Willie Neison",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25a1"
+    },
+    {
+      "songId": "24",
+      "songName": "Help me make it through the night",
+      "songDescription": "",
+      "songCategory": "country",
+      "songLink": "https://www.youtube.com/watch?v=u2cnEcDJVkY",
+      "songAuthor": "Willie Neison",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25a2"
+    },
+    {
+      "songId": "25",
+      "songName": "Georgia on my mind",
+      "songDescription": "",
+      "songCategory": "country",
+      "songLink": "https://www.youtube.com/watch?v=QxiVkt1B2CQ",
+      "songAuthor": "Willie Neison",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25a3"
+    },
+    {
+      "songId": "26",
+      "songName": "Blue Christmas",
+      "songDescription": "",
+      "songCategory": "Noel",
+      "songLink": "https://www.youtube.com/watch?v=ehb9PtN-eyA",
+      "songAuthor": "Elvis Presley",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25a4"
+    },
+    {
+      "songId": "27",
+      "songName": "Away in the manger",
+      "songDescription": "",
+      "songCategory": "Noel",
+      "songLink": "https://www.youtube.com/watch?v=ehb9PtN-eyA",
+      "songAuthor": "",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25a5"
+    },
+    {
+      "songId": "28",
+      "songName": "Crazy",
+      "songDescription": "",
+      "songCategory": "Country",
+      "songLink": "https://www.youtube.com/watch?v=auSRtWreLn0",
+      "songAuthor": "Brigitte Boisjoli",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25a6"
+    },
+    {
+      "songId": "29",
+      "songName": "Funny how time slips away",
+      "songDescription": "",
+      "songCategory": "Country",
+      "songLink": "https://www.youtube.com/watch?v=bZuJqQPrE_Y",
+      "songAuthor": "Willie Neison",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25a7"
+    },
+    {
+      "songId": "30",
+      "songName": "Help me make it through the night",
+      "songDescription": "",
+      "songCategory": "Country",
+      "songLink": "https://www.youtube.com/watch?v=u2cnEcDJVkY",
+      "songAuthor": "",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25a8"
+    },
+    {
+      "songId": "31",
+      "songName": "Holy night",
+      "songDescription": "",
+      "songCategory": "Noel",
+      "songLink": "https://www.youtube.com/watch?v=ZSkLgR67Aoc",
+      "songAuthor": "",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25a9"
+    },
+    {
+      "songId": "32",
+      "songName": "Spanish eyes in Ottawa 2017",
+      "songDescription": "",
+      "songCategory": "Popular",
+      "songLink": "https://www.youtube.com/watch?v=uezolB5VcuQ",
+      "songAuthor": "",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25aa"
+    },
+    {
+      "songId": "33",
+      "songName": "C'est dans le temps du jour de l'an",
+      "songDescription": "Live Vaudreuil Noel 2023, la joie dans notre malheur de Saint-Eustache",
+      "songCategory": "Popular",
+      "songLink": "https://www.youtube.com/watch?v=uezolB5VcuQ",
+      "songAuthor": "",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25ab"
+    },
+    {
+      "songId": "34",
+      "songName": "Spanish eyes live in Vaudreuil 2023",
+      "songDescription": "Live Vaudreuil Noel 2023, la joie dans notre malheur de Saint-Eustache",
+      "songCategory": "Popular",
+      "songLink": "https://www.youtube.com/watch?v=jVG2lp60kYc",
+      "songAuthor": "Engelbert Humperdinck",
+      "createdDate": "2025/12/14",
+      "createdBy": "system",
+      "id": "25ac"
     }
   ],
   "users": [
@@ -291,28 +423,12 @@
       "id": "263e"
     },
     {
-      "id": "d4c5",
-      "emailaddress": "jbleau@outlook.com"
-    },
-    {
       "id": "2023",
       "emailaddress": "alex@seguin.dev"
     },
     {
       "id": "add8",
       "emailaddress": "nathalieaseguin68@gmail.com"
-    },
-    {
-      "id": "e777",
-      "emailaddress": "daniel.seguin.externe@mrnf.gouv.qc.ca"
-    },
-    {
-      "id": "5db2",
-      "emailaddress": "jeanarache@outlook.com"
-    },
-    {
-      "id": "ca8d",
-      "emailaddress": "alexterieur@abc.com"
     }
   ],
   "questionslist": [
