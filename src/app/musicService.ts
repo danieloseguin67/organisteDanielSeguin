@@ -7,7 +7,17 @@ import musicData from '../data/music.json';
   providedIn: 'root'
 })
 export class MusicService {
-  private musicList: musicModel[] = musicData.music;
+  private musicList: musicModel[] = musicData.music.map((item: any) => ({
+    songId: String(item.Songid),
+    songName: item.Songname,
+    songDescription: item.Songdescription,
+    songCategory: item.Songcategory,
+    songLink: item.Songlink,
+    songAuthor: item.Songauthor,
+    createdDate: item.Createddate,
+    createdBy: item.Createdby,
+    id: item.Id
+  }));
 
   constructor(private _Location: Location) {}
 
