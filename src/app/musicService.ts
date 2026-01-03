@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { musicModel } from './musicModel';
 import { Location } from '@angular/common'
-import musicData from '../data/music.json';
+import songData from '../data/song.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MusicService {
-  private musicList: musicModel[] = musicData.music.map((item: any) => ({
+  private musicList: musicModel[] = songData.map((item: any) => ({
     songId: String(item.Songid),
     songName: item.Songname,
     songDescription: item.Songdescription,
